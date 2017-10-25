@@ -3,7 +3,8 @@
     "description": "Multiple select element",
     "type": "yii2-extension",
     "keywords": ["muhiddin","multiple-select","yii2","extension","select","widget","multiple","jquery"],
-    "license": "BSD-3-Clause",		
+    "license": "BSD-3-Clause",	
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Muxiddin Jumaniyazov",
