@@ -18,6 +18,8 @@ or add
 
 to the require section of your `composer.json` file.
 
+[Jquery soruce](http://loudev.com/)
+
 Usage
 -----
 
