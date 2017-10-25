@@ -3,8 +3,7 @@
     "description": "Multiple select element",
     "type": "yii2-extension",
     "keywords": ["muhiddin","multiple-select","yii2","extension","select","widget","multiple","jquery"],
-    "license": "BSD-3-Clause",	
-    "minimum-stability": "dev",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Muxiddin Jumaniyazov",
@@ -16,8 +15,10 @@
     "issues": "https://github.com/muhiddingithub/yii2-multiple-select/issues",
     "source": "https://github.com/muhiddingithub/yii2-multiple-select"
   },
+    "minimum-stability": "dev",
     "require": {
-         "yiisoft/yii2": "*"   
+        "yiisoft/yii2": "*",
+        "muhiddingithub/yii2-multiple-select":"*"
     },
     "autoload": {
         "psr-4": {
