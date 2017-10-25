@@ -17,6 +17,7 @@
     "require": {
         "php": ">=5.5.0",
 	"yiisoft/yii2": "2.0.*",
+	"muhiddingithub/yii2-multiple-select":"1.0"   
     },
     "autoload": {
         "psr-4": {
