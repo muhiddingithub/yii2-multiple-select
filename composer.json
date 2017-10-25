@@ -10,14 +10,13 @@
             "email": "hellomyhp@gmail.com"
         }
     ],
-  "minimum-stability":"dev",	
+  
   "support": {
     "issues": "https://github.com/muhiddingithub/yii2-multiple-select/issues",
     "source": "https://github.com/muhiddingithub/yii2-multiple-select"
   },
     "require": {
-        "yiisoft/yii2": "~2.0.*",
-	"muhiddingithub/yii2-multiple-select":"~1.0"   
+         "yiisoft/yii2": "*"   
     },
     "autoload": {
         "psr-4": {
