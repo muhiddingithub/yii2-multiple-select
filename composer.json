@@ -14,7 +14,6 @@
     "issues": "https://github.com/muhiddingithub/yii2-multiple-select/issues",
     "source": "https://github.com/muhiddingithub/yii2-multiple-select"
   },
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0",
 	"yiisoft/yii2": "2.0.*",
