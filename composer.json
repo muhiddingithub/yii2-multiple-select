@@ -15,7 +15,7 @@
     "issues": "https://github.com/muhiddingithub/yii2-multiple-select/issues",
     "source": "https://github.com/muhiddingithub/yii2-multiple-select"
   },
-   
+   "minimum-stability":"stable",
     "autoload": {
         "psr-4": {
             "muhiddin\\select\\": ""
