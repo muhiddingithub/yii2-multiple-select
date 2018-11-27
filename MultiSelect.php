@@ -1,8 +1,8 @@
 <?php
 namespace muhiddin\select;
 
-use yii\bootstrap\InputWidget;
-use yii\bootstrap\Html;
+use yii\widgets\InputWidget;
+use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\View;
 use muhiddin\select\MultiSelectAsset;
@@ -11,7 +11,7 @@ class MultiSelect extends InputWidget
 {
     public $data;
     public $id = 'multi-select';
-    public $pluginOptions = '';
+    public $pluginOptions = [];
     public $selectAll = false;
     public $deselectAll = false;
 
@@ -21,12 +21,13 @@ class MultiSelect extends InputWidget
             $this->options['id'] = $this->id;
         }
         if ($this->selectAll)
-            echo Html::a(\Yii::t('backend', 'select all'), '#', ['id' => $this->id . '-select-all']);
+            echo Html::a(\Yii::t('app', 'select all'), '#', ['id' => $this->id . '-select-all']);
 
         if ($this->deselectAll)
-            echo Html::a(\Yii::t('backend', 'deselect all'), '#', ['id' => $this->id . '-deselect-all']);
+            echo Html::a(\Yii::t('app', 'deselect all'), '#', ['id' => $this->id . '-deselect-all']);
 
         MultiSelectAsset::register($this->getView());
+
         if (isset($this->model)) {
             $this->pluginOptions[] = $this->model->{$this->attribute};
             echo Html::activeDropDownList($this->model, $this->attribute, $this->data, $this->options);
@@ -58,7 +59,7 @@ class MultiSelect extends InputWidget
             });";
 
         \Yii::$app->view->registerJs("
-           $('#" . $this->id . "').multiSelect({$pluginOptions});   
+           $('#" . $this->id . "').multiSelect({$pluginOptions});
         " . $addJsScript, View::POS_END);
     }
 }
